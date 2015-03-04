@@ -1,0 +1,90 @@
+@font-face {
+	font-family:'Abel';
+	src:url('fonts/Abel-Regular-webfont.eot');
+	src:url('fonts/Abel-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Abel-Regular-webfont.woff2') format('woff2'),
+		url('fonts/Abel-Regular-webfont.woff') format('woff'),
+		url('fonts/Abel-Regular-webfont.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'LatoBlack';
+	src:url('fonts/Lato-Black-webfont.eot');
+	src:url('fonts/Lato-Black-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Lato-Black-webfont.woff2') format('woff2'),
+		url('fonts/Lato-Black-webfont.woff') format('woff'),
+		url('fonts/Lato-Black-webfont.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'LatoBlackItalic';
+	src:url('fonts/Lato-BlackItalic-webfont.eot');
+	src:url('fonts/Lato-BlackItalic-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Lato-BlackItalic-webfont.woff2') format('woff2'),
+		url('fonts/Lato-BlackItalic-webfont.woff') format('woff'),
+		url('fonts/Lato-BlackItalic-webfont.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'LatoBold';
+	src:url('fonts/Lato-Bold-webfont.eot');
+	src:url('fonts/Lato-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Lato-Bold-webfont.woff2') format('woff2'),
+		url('fonts/Lato-Bold-webfont.woff') format('woff'),
+		url('fonts/Lato-Bold-webfont.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'LatoBoldItalic';
+	src:url('fonts/Lato-BoldItalic-webfont.eot');
+	src:url('fonts/Lato-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Lato-BoldItalic-webfont.woff2') format('woff2'),
+		url('fonts/Lato-BoldItalic-webfont.woff') format('woff'),
+		url('fonts/Lato-BoldItalic-webfont.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'LatoItalic';
+	src:url('fonts/Lato-Italic-webfont.eot');
+	src:url('fonts/Lato-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Lato-Italic-webfont.woff2') format('woff2'),
+		url('fonts/Lato-Italic-webfont.woff') format('woff'),
+		url('fonts/Lato-Italic-webfont.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'LatoLight';
+	src:url('fonts/Lato-Light-webfont.eot');
+	src:url('fonts/Lato-Light-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Lato-Light-webfont.woff2') format('woff2'),
+		url('fonts/Lato-Light-webfont.woff') format('woff'),
+		url('fonts/Lato-Light-webfont.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'LatoLightItalic';
+	src:url('fonts/Lato-LightItalic-webfont.eot');
+	src:url('fonts/Lato-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Lato-LightItalic-webfont.woff2') format('woff2'),
+		url('fonts/Lato-LightItalic-webfont.woff') format('woff'),
+		url('fonts/Lato-LightItalic-webfont.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'Lato';
+	src:url('fonts/Lato-Regular-webfont.eot');
+	src:url('fonts/Lato-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Lato-Regular-webfont.woff2') format('woff2'),
+		url('fonts/Lato-Regular-webfont.woff') format('woff'),
+		url('fonts/Lato-Regular-webfont.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}

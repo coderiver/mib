@@ -54,112 +54,574 @@ body
 	line-height: 1.4
 
 
-// common blocks      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// common blocks 
+.menu
+	float: left
+	position: relative
+	&.is-active
+		.menu__btn
+			background: #cd0f41
+	.menu__in
+		display: inline-block
+	.menu__btn
+		position: relative
+		height: 60px
+		width: 60px
+		vertical-align: top
+		background: none
+		display: none
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			left: 50%
+			margin: -15px 0 0 -15px
+			+svg(menu, 30, 30)
+
+section.top
+	.newsletter
+		float: right
+
+.slick-slider
+	font-size: 0
+	.slick-slide
+		padding: 10px
+		+box
+	.slick-next
+		+border-radius(94px 0 0 94px)
+		&:hover
+			&:before
+				+s(slick-next-hover)
+		&:before
+			left: 18px
+			+s(slick-next)
+	.slick-prev
+		+border-radius(0 94px 94px 0)
+		&:hover
+			&:before
+				+s(slick-prev-hover)
+		&:before
+			left: 6px
+			+s(slick-prev)
+	.slick-next,
+	.slick-prev
+		margin-top: -47px
+		width: 47px
+		height: 94px
+		background: rgba(#E7E7E7, .8)
+		&:before
+			position: absolute
+			top: 50%
+			font-size: 0
+			margin-top: -17.5px
+
+.top-slider
+	height: 360px
+	overflow: hidden
+	.slick-slide
+		padding: 0
+	.slick-dots
+		right: auto
+		left: 50%
+		transform: translate(-50%, 0)
+		-moz-transform: translate(-50%, 0)
+		-o-transform: translate(-50%, 0)
+		-webkit-transform: translate(-50%, 0)
+		-ms-transform: translate(-50%, 0)
+		padding: 9px 30px 7px
+		bottom: 0
+		height: 30px
+		background: rgba(#FFF, .77)
+		+box
+		button
+			width: 13px
+			height: 13px
+			background: #7c7c7c
+			+border-radius(3px)
+		li
+			margin-left: 5px
+
+.classifieds
+	+clr
+.classifieds-slider
+	padding-bottom: 40px
+	.slick-dots
+		bottom: 20px
+		button
+			width: 14px
+			height: 14px
+		li
+			margin-left: 12px
+	.slick-next,
+	.slick-prev
+		top: 65px
+		margin-top: 0
+		background: none
+		&:before
+			display: none
+	.slick-next
+		right: -20px
+		+s(arr-slider-right)
+	.slick-prev
+		left: -20px
+		+s(arr-slider-left)
+
+.other-slider
+	padding-bottom: 5px
+	.slick-slide
+		padding: 2px
+	.slick-next,
+	.slick-prev
+		opacity: 0
+	.slick-dots
+		bottom: 5px
+		button
+			height: 8px
+			width: 8px
+		li
+			margin-left: 5px
+
+.slick-dots
+	button
+		background: #e6e6e6
+		+border-radius(50%)
+	li
+		&:first-child
+			margin-left: 0
+		&.slick-active
+			button
+				background: #a3cd39
+
+.popup
+	position: fixed
+	top: 48px
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	background: rgba(#fff, .93)
+	z-index: 100
+	text-align: center
+	display: none
+	+vertical
+	&.is-active
+		display: block
+	.popup__in
+		position: relative
+		top: -57px
+		text-align: left
+		z-index: 300
+		display: inline-block
+		+vertical
+
+.form
+	width: 897px
+	padding: 20px 38px
+	background: #cd0f41
+	+box
+	+clr
+	+r(968)
+		width: 600px
+	+r(600)
+		width: 480px
+	+r(495)
+		width: 320px
+	.form__text
+		float: left
+		margin-top: 15px
+		color: #FFF
+		font-size: 25px
+		font-weight: 400
+		text-transform: uppercase
+		+r(968)
+			margin-top: 0
+	.form__search
+		float: right
+		width: 555px
+		position: relative
+		padding-right: 59px
+		+box
+		+r(968)
+			width: 100%
+		input
+			padding: 0 20px
+			width: 100%
+			height: 62px
+			line-height: 60px
+			font-weight: 400
+			background: #fff
+			font-size: 25px
+			display: inline-block
+			+placeholder-color(#d4d4d4)
+	.btn-search
+		position: absolute
+		top: 0
+		right: 0
+		height: 62px
+		width: 58px
+		background: none
+		&:hover
+			+opacity(.9)
+		&:before
+			position: absolute
+			content: ''
+			top: 50%
+			right: 0
+			margin-top: -17px
+			+s(search-ico)
+
++r(1200)
+	footer 
+		nav  
+			ul  
+				li
+					+box
+					&:first-child
+						padding-left: 10px
+					li
+						&:first-child
+							padding-left: 0
++r(1050)
+	header
+		nav
+			padding: 0 10px
+			+box
+			.grid-50
+				width: 30%
+				&:first-child
+					width: 70%
+			a.icon
+				display: none
+			a.icon.home
+				display: inline-block
++r(1024)
+	main header
+		ul
+			display: table
+			height: 40px
+			width: 100%
+			li
+				display: table-cell
+				width: auto
+				a
+					font-size: 12px
+					line-height: 40px
+				ul
+					top: 100%
+					li 
+						figure
+							display: none
+				&:hover
+					ul
+						display: table
+	.login
+		font-size: 0
+		& + span
+			display: none
+	.register
+		display: none
+
+	section.top
+		padding-left: 0
+		.left-ad
+			display: none
+	.categories
+		.grid-25
+			width: 50%
+			article p
+				padding: 10px
+	.scroll-top
+		display: none
+	footer 
+		nav  
+			ul  
+				li
+					ul
+						li
+							font-size: 13px
+							a
+								font-size: 12px
+								line-height: 28px
+		.copy
+			.grid-50
+				width: 30%
+				&:first-child
+					width: 70%
++r(968)
+	section.tabs 
+		ul li
+			font-size: 16px
+			line-height: 50px
++r(810)
+	main header
+		ul
+			li
+				text-align: center
+		figure.ad
+			display: none
+		.grid-logo
+			width: 100%
+			.logo
+				margin: 0 auto
+	header
+		nav
+			.grid-50
+				width: 15%
+				&:first-child
+					width: 85%
+	section.top
+		.newsletter
+			float: none
+			width: 100%
+		.grid-66
+			width: 100%
+		.top-slider
+			height: auto
+		.right-ad
+			display: none
+	footer 
+		nav  
+			ul  
+				li
+					width: 50%
+					text-align: center
+					ul
+						li
+							width: 100%
+			.social
+				text-align: center
+	.footer 
+		.copy
+			font-size: 10px
+			a, span
+				font-size: 10px
+
++r(720)
+	main
+		padding-bottom: 110px
+	main header
+		ul
+			padding: 15px 0
+			display: block
+			height: auto
+			li
+				position: relative
+				display: block
+				width: 100%
+				&:hover
+					a
+						color: #fff
+						background: none
+						&:before
+							display: none
+					ul
+						display: none
+				&.is-active
+					a
+						color: #a3cd39
+						background: #fff
+						&:after,
+						&:before
+							display: block
+					ul
+						display: block
+						a
+							&:after
+								display: none
+				a
+					font-size: 15px
+					&:after
+						display: none
+						content: ''
+						position: absolute
+						left: 0
+						bottom: 0
+						width: 100%
+						height: 5px
+						background: #a3cd39
+						
+				ul
+					position: relative
+					li
+						padding: 0
+						font-size: 14px
+						a
+							font-size: 13px
+	header
+		nav
+			.grid-50
+				width: 50%
+				&:first-child
+					width: 50%
+	.menu
+		&.is-active
+			.menu__in
+				display: block
+		.menu__in
+			position: absolute
+			top: 100%
+			left: 0
+			padding: 11px 0 10px
+			width: 300px
+			z-index: 10
+			border-top: none
+			background: #a3cd39
+			display: none
+			a
+				margin: 0
+				padding: 0 20px
+				line-height: 35px
+				display: block
+				&:hover
+					color: #a3cd39
+					background: #fff
+		.menu__btn
+			display: inline-block
+	section.tabs 
+		ul li
+			font-size: 13px
+			line-height: 40px
+	.have-you-seen,
+	.more
+		.grid-25
+			width: 50%
+	.more
+		.title
+			margin-left: -40px
+	.have-you-seen
+		.title
+			margin-left: -75px
+	.classifieds
+		.title
+			margin-left: -65px
+	.bahrain-jobs
+		.latest,
+		.forum
+			width: 100%
+		.latest
+			padding-top: 28px
+		.forum
+			text-align: center
+		.title
+			margin-left: -70px
+	.mother-stories
+		.grid-25
+			width: 50%
+		.title
+			margin-left: -90px
+	.bottom
+		.grid-66
+			width: 100%
+		.grid-33
+			width: 100%
+	.bahrain-jobs,
+	.have-you-seen,
+	.more,
+	.mother-stories,
+	.classifieds
+		.title
+			left: 50%
+	section.top 
+		article a
+			font-size: 13px
+			padding: 5px 0 5px 30px
+			line-height: 1.4
+			box-sizing: border-box
+			&:before
+				position: absolute
+				top: 50%
+				left: 5px
+				margin: -12px 0 0 0
+				width: 24px
+	.footer 
+		.copy
+			.grid-50
+				width: 20%
+				&:first-child
+					width: 80%
++r(600)
+	section.tabs 
+		ul li
+			font-size: 0
+			span
+				font-size: 12px
+	section.categories 
+		a,
+		a.share
+			font-size: 9px
+		article h2
+			padding: 10px 20px 0 20px
+			text-align: center
+			font-size: 14px
+		.grid-25 article p
+			padding: 4px 10px 10px
+			font-size: 13px
+	.other
+		text-align: center
+		.grid-100
+			.grid-33
+				width: 100%
+		.grid-33
+			width: 50%
+	.mother-stories,
+	.classifieds
+		text-align: center
+	section.classifieds p
+		padding: 0
+	section.top 
+		article a
+			font-size: 12px
+			line-height: 1.2
+	.footer 
+		.copy
+			.grid-50
+				width: 100%
+				text-align: center
+				&:first-child
+					width: 100%
+
++r(480)
+	section.top
+		.grid-33
+			width: 100%
+	.grid-25
+		width: 100%
+	.have-you-seen,
+	.more
+		.grid-25
+			width: 100%
+	.bahrain-jobs
+		.latest
+			text-align: center
+			.grid-50
+				width: 100%
+			.phone,
+			.mail
+				display: inline-block
+	section.categories 
+		.grid-25
+			width: 100%
+		.grid-25 article p
+			text-align: center
+	.centrepoint
+		.grid
+			width: 100%
+	.mother-stories
+		.grid-25
+			width: 100%
+	.classifieds
+		.grid-100
+			margin-top: 20px
+	.bottom
+		.grid-66
+			text-align: center
+			.grid-50
+				width: 100%
+			h2
+				margin: 0 auto
++r(340)
+	.bisiness
+		line-height: 85px
 
 
 
