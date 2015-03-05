@@ -878,6 +878,9 @@ section.tabs ul li {
 	cursor:pointer;
 	font-family:Abel;
 }
+section.tabs ul li:first-child {
+	width: 240px;
+}
 section.tabs ul li:hover, section.tabs ul li.active {
 	background:transparent;
 	color:#2c2c2c;

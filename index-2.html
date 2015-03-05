@@ -347,7 +347,7 @@
 		<section class="classifieds">
 			<h1 class="title">Classifieds</h1>
 			<div class="grid grid-100 right">
-				<a href="#">View All</a>
+				<a class="all" href="#">View All</a>
 				<a href="#">Post A Free Ad</a>
 			</div>
 			<div class="classifieds-slider">
@@ -393,11 +393,11 @@
 				</div>
 			</div>
 		</section>
-				<section class="categories">
-			<div class="grid grid-100">
-				<div class="grid grid-25">
+		<section class="categories">
+			<div class="slider-categories">
+				<div>
 					<article class="category-one">
-						<figure><img class="lazy" data-original="css/images/ask-the-doctor.jpg" alt=""></figure>
+						<figure><img src="css/images/ask-the-doctor.jpg" alt=""></figure>
 						<h2>Ask the doctor</h2>
 						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
 						<div class="grid grid-50">
@@ -406,9 +406,10 @@
 							<a href="#" class="share">Share</a>
 						</div>
 					</article>
-				</div><div class="grid grid-25">
+				</div>
+				<div>
 					<article class="category-two">
-						<figure><img class="lazy" data-original="css/images/moving-to-bahrain.jpg" alt=""></figure>
+						<figure><img src="css/images/moving-to-bahrain.jpg" alt=""></figure>
 						<h2>Moving to Bahrain</h2>
 						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
 						<div class="grid grid-50">
@@ -417,9 +418,10 @@
 							<a href="#" class="share">Share</a>
 						</div>
 					</article>
-				</div><div class="grid grid-25">
+				</div>
+				<div>
 					<article class="category-three">
-						<figure><img class="lazy" data-original="css/images/bahrain-information-guide.jpg" alt=""></figure>
+						<figure><img src="css/images/bahrain-information-guide.jpg" alt=""></figure>
 						<h2>Bahrain information guide</h2>
 						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
 						<div class="grid grid-50">
@@ -428,9 +430,58 @@
 							<a href="#" class="share">Share</a>
 						</div>
 					</article>
-				</div><div class="grid grid-25">
+				</div>
+				<div>
 					<article class="category-four">
-						<figure><img  class="lazy" data-original="css/images/back-to-school.jpg" alt=""></figure>
+						<figure><img src="css/images/back-to-school.jpg" alt=""></figure>
+						<h2>Back to school</h2>
+						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
+						<div class="grid grid-50">
+							<a href="#" class="read-more">Readmore</a>
+						</div><div class="grid grid-50 right">
+							<a href="#" class="share">Share</a>
+						</div>
+					</article>
+				</div>
+				<div>
+					<article class="category-one">
+						<figure><img src="css/images/ask-the-doctor.jpg" alt=""></figure>
+						<h2>Ask the doctor</h2>
+						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
+						<div class="grid grid-50">
+							<a href="#" class="read-more">Readmore</a>
+						</div><div class="grid grid-50 right">
+							<a href="#" class="share">Share</a>
+						</div>
+					</article>
+				</div>
+				<div>
+					<article class="category-two">
+						<figure><img src="css/images/moving-to-bahrain.jpg" alt=""></figure>
+						<h2>Moving to Bahrain</h2>
+						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
+						<div class="grid grid-50">
+							<a href="#" class="read-more">Readmore</a>
+						</div><div class="grid grid-50 right">
+							<a href="#" class="share">Share</a>
+						</div>
+					</article>
+				</div>
+				<div>
+					<article class="category-three">
+						<figure><img src="css/images/bahrain-information-guide.jpg" alt=""></figure>
+						<h2>Bahrain information guide</h2>
+						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
+						<div class="grid grid-50">
+							<a href="#" class="read-more">Readmore</a>
+						</div><div class="grid grid-50 right">
+							<a href="#" class="share">Share</a>
+						</div>
+					</article>
+				</div>
+				<div>
+					<article class="category-four">
+						<figure><img src="css/images/back-to-school.jpg" alt=""></figure>
 						<h2>Back to school</h2>
 						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
 						<div class="grid grid-50">
@@ -497,7 +548,7 @@
 					<div class="grid grid-50">
 						<div class="phone">1235456987</div>
 					</div><div class="grid grid-50">
-						<div class="mail">contact@joydring.net</div>
+						<a href="#" class="mail">contact@joydring.net</a>
 					</div>
 				</article>
 				<article>
@@ -505,7 +556,7 @@
 					<div class="grid grid-50">
 						<div class="phone">1235456987</div>
 					</div><div class="grid grid-50">
-						<div class="mail">contact@joydring.net</div>
+						<a href="#" class="mail">contact@joydring.net</a>
 					</div>
 				</article>
 				<a href="#" class="view-all">View All</a>
@@ -549,6 +600,7 @@
 				</div><div class="grid grid-33">
 					<article>
 						<h1 class="title">Tools</h1>
+						<figure><img class="lazy" data-original="css/images/mib-channel.jpg" alt=""></figure>
 					</article>
 				</div>
 			</div>
@@ -618,28 +670,59 @@
 		</section>
 		<section class="mother-stories">
 			<h1 class="title">Mother Stories</h1>
-			<div class="grid grid-100">
-				<div class="grid grid-25">
+			<div class="slider-categories">
+				<div>
 					<a href="#">
-						<figure><img class="lazy" data-original="css/images/mother-stories-1.jpg" alt=""></figure>
+						<figure><img src="css/images/mother-stories-1.jpg" alt=""></figure>
 						<h2>Musheera Abbas</h2>
 						<h3>Amwaj Islands</h3>
 					</a>
-				</div><div class="grid grid-25">
+				</div>
+				<div>
 					<a href="#">
-						<figure><img class="lazy" data-original="css/images/mother-stories-2.jpg" alt=""></figure>
+						<figure><img src="css/images/mother-stories-2.jpg" alt=""></figure>
 						<h2>Alexandra James</h2>
 						<h3>Riffa Views</h3>
 					</a>
-				</div><div class="grid grid-25">
+				</div>
+				<div>
 					<a href="#">
-						<figure><img class="lazy" data-original="css/images/mother-stories-3.jpg" alt=""></figure>
+						<figure><img src="css/images/mother-stories-3.jpg" alt=""></figure>
 						<h2>Jenny Smith</h2>
 						<h3>Hamad Town</h3>
 					</a>
-				</div><div class="grid grid-25">
+				</div>
+				<div>
 					<a href="#">
-						<figure><img class="lazy" data-original="css/images/mother-stories-4.jpg" alt=""></figure>
+						<figure><img src="css/images/mother-stories-4.jpg" alt=""></figure>
+						<h2>Maria Bin Ali</h2>
+						<h3>Muharraq</h3>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<figure><img src="css/images/mother-stories-1.jpg" alt=""></figure>
+						<h2>Musheera Abbas</h2>
+						<h3>Amwaj Islands</h3>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<figure><img src="css/images/mother-stories-2.jpg" alt=""></figure>
+						<h2>Alexandra James</h2>
+						<h3>Riffa Views</h3>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<figure><img src="css/images/mother-stories-3.jpg" alt=""></figure>
+						<h2>Jenny Smith</h2>
+						<h3>Hamad Town</h3>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<figure><img src="css/images/mother-stories-4.jpg" alt=""></figure>
 						<h2>Maria Bin Ali</h2>
 						<h3>Muharraq</h3>
 					</a>

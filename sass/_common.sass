@@ -162,6 +162,11 @@ body
 		&:hover
 			&:after
 				display: none
+.mail
+	&:hover
+		text-decoration: underline
+		+opacity(0.7)
+
 .login
 	&.is-active
 		&:after
@@ -266,14 +271,13 @@ section.top
 		+s(arr-slider-left)
 
 .other-slider
-	padding-bottom: 5px
+	padding-bottom: 13px
 	.slick-slide
 		padding: 2px
 	.slick-next,
 	.slick-prev
 		opacity: 0
 	.slick-dots
-		bottom: 5px
 		button
 			height: 8px
 			width: 8px
@@ -368,6 +372,39 @@ section.top
 			right: 0
 			margin-top: -17px
 			+s(search-ico)
+.more
+	a
+		border: 1px solid #f6f6f6
+
+.slider-categories
+	margin: 0 10px
+	padding-top: 20px
+	.slick-next,
+	.slick-prev
+		position: absolute
+		top: 8px
+		right: 40px
+		margin: 0
+		left: auto
+		&:before
+			display: none
+	.slick-prev
+		right: 70px
+		+s(arrather-ico-right)
+		&:hover
+			top: 7px
+			+si(arrather-right-hover)
+	.slick-next
+		+s(arrather-ico-left)
+		&:hover
+			top: 7px
+			+si(arrather-lext-hover)
+
+.classifieds .all
+	padding: 5px
+	&:hover
+		color: #fff
+		background: #cd0f41
 
 +r(1200)
 	footer 
@@ -430,7 +467,7 @@ section.top
 			article p
 				padding: 10px
 	.scroll-top
-		display: none
+		display: none !important
 	footer 
 		nav  
 			ul  
@@ -446,6 +483,9 @@ section.top
 				width: 30%
 				&:first-child
 					width: 70%
+	section.tabs ul li
+		&:first-child
+			width: auto
 +r(968)
 	section.tabs 
 		ul li
@@ -499,18 +539,18 @@ section.top
 	body
 		position: relative
 		overflow-x: hidden
-		// &:before
-		// 	position: fixed
-		// 	content: ''
-		// 	top: 0
-		// 	left: 0
-		// 	width: 0
-		// 	bottom: 0
-		// 	background: #cd0f41
-		// 	-webkit-transition: width, 0.5s
-		// 	-moz-transition: width, 0.5s
-		// 	-o-transition: width, 0.5s
-		// 	transition: width, 0.5s
+		&:before
+			position: fixed
+			content: ''
+			top: 0
+			left: 0
+			width: 0
+			bottom: 0
+			background: #cd0f41
+			-webkit-transition: width, 0.5s
+			-moz-transition: width, 0.5s
+			-o-transition: width, 0.5s
+			transition: width, 0.5s
 		&.is-active
 			&:before
 				width: 70%
@@ -536,7 +576,6 @@ section.top
 		position: absolute
 		top: 0
 		left: -300px
-		bottom: 0
 		padding: 0
 		margin: 0
 		width: 300px
