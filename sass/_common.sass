@@ -54,16 +54,16 @@ body
 
 
 // common blocks 
+
+
 .menu
 	float: left
 	position: relative
-	&.is-active
-		.menu__btn
-			background: #cd0f41
 	.menu__in
 		display: inline-block
 	.menu__btn
 		position: relative
+		left: -10px
 		height: 60px
 		width: 60px
 		vertical-align: top
@@ -496,7 +496,94 @@ section.top
 				font-size: 10px
 
 +r(720)
-	main
+	body
+		position: relative
+		overflow-x: hidden
+		// &:before
+		// 	position: fixed
+		// 	content: ''
+		// 	top: 0
+		// 	left: 0
+		// 	width: 0
+		// 	bottom: 0
+		// 	background: #cd0f41
+		// 	-webkit-transition: width, 0.5s
+		// 	-moz-transition: width, 0.5s
+		// 	-o-transition: width, 0.5s
+		// 	transition: width, 0.5s
+		&.is-active
+			&:before
+				width: 70%
+			.menu__btn
+				background: #cd0f41
+			.out
+				margin-left: 70%
+				margin-right: -70%
+			.navigation
+				left: 0
+				width: 70%
+		.out
+			background-color: #ddf1e5
+			overflow: auto
+			-webkit-transition: margin-left, 0.5s
+			-moz-transition: margin-left, 0.5s
+			-o-transition: margin-left, 0.5s
+			transition: margin-left, 0.5s
+			.header
+				position: relative
+				z-index: 3
+	.navigation
+		position: absolute
+		top: 0
+		left: -300px
+		bottom: 0
+		padding: 0
+		margin: 0
+		width: 300px
+		vertical-align: top
+		-webkit-transition: left, 0.5s
+		-moz-transition: left, 0.5s
+		-o-transition: left, 0.5s
+		transition: left, 0.5s
+		&.is-transition
+			-webkit-transition: left, 0s
+			-moz-transition: left, 0s
+			-o-transition: left, 0s
+			transition: left, 0s
+
+		li
+			border-left: 4px solid transparent
+			+box
+			a
+				padding: 0 20px
+				text-align: left
+				+box
+			&.is-active
+				ul
+					a
+						background: none !important
+				&.red
+					border-color: #ff4646
+					a
+						background: #ff4646
+				&.pink
+					border-color: #f94682
+					a
+						background-color: #f94682
+				&.teal
+					border-color: #3bd6bd
+					a
+						background-color: #3bd6bd
+				&.green
+					border-color: #84c576
+					a
+						background-color: #84c576
+				&.orange
+					border-color: #f99128
+					a
+						background-color: #f99128
+	.main
+		position: initial
 		padding-bottom: 110px
 	main header
 		ul
@@ -515,13 +602,11 @@ section.top
 							display: none
 					ul
 						display: none
+						a
+							color: #000
 				&.is-active
 					a
-						color: #a3cd39
 						background: #fff
-						&:after,
-						&:before
-							display: block
 					ul
 						display: block
 						a
@@ -541,6 +626,7 @@ section.top
 						
 				ul
 					position: relative
+					border-bottom: transparent
 					li
 						padding: 0
 						font-size: 14px

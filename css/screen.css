@@ -24,9 +24,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 body { font-size: 12px; line-height: 1.4; }
 
 .menu { float: left; position: relative; }
-.menu.is-active .menu__btn { background: #cd0f41; }
 .menu .menu__in { display: inline-block; }
-.menu .menu__btn { position: relative; height: 60px; width: 60px; vertical-align: top; background: none; display: none; }
+.menu .menu__btn { position: relative; left: -10px; height: 60px; width: 60px; vertical-align: top; background: none; display: none; }
 .menu .menu__btn:before { position: absolute; content: ""; top: 50%; left: 50%; margin: -15px 0 0 -15px; background: url("../img/svg/menu.svg") no-repeat 0 0; -moz-background-size: 30px 30px; -o-background-size: 30px 30px; -webkit-background-size: 30px 30px; background-size: 30px 30px; width: 30px; height: 30px; display: inline-block; }
 
 .header-nav { position: relative; }
@@ -161,19 +160,41 @@ section.top .newsletter { float: right; }
   footer nav .social { text-align: center; }
   .footer .copy { font-size: 10px; }
   .footer .copy a, .footer .copy span { font-size: 10px; } }
-@media only screen and (max-width: 720px) { main { padding-bottom: 110px; }
+@media only screen and (max-width: 720px) { body { position: relative; overflow-x: hidden; }
+  body.is-active:before { width: 70%; }
+  body.is-active .menu__btn { background: #cd0f41; }
+  body.is-active .out { margin-left: 70%; margin-right: -70%; }
+  body.is-active .navigation { left: 0; width: 70%; }
+  body .out { background-color: #ddf1e5; overflow: auto; -webkit-transition: margin-left, 0.5s; -moz-transition: margin-left, 0.5s; -o-transition: margin-left, 0.5s; transition: margin-left, 0.5s; }
+  body .out .header { position: relative; z-index: 3; }
+  .navigation { position: absolute; top: 0; left: -300px; bottom: 0; padding: 0; margin: 0; width: 300px; vertical-align: top; -webkit-transition: left, 0.5s; -moz-transition: left, 0.5s; -o-transition: left, 0.5s; transition: left, 0.5s; }
+  .navigation.is-transition { -webkit-transition: left, 0s; -moz-transition: left, 0s; -o-transition: left, 0s; transition: left, 0s; }
+  .navigation li { border-left: 4px solid transparent; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .navigation li a { padding: 0 20px; text-align: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .navigation li.is-active ul a { background: none !important; }
+  .navigation li.is-active.red { border-color: #ff4646; }
+  .navigation li.is-active.red a { background: #ff4646; }
+  .navigation li.is-active.pink { border-color: #f94682; }
+  .navigation li.is-active.pink a { background-color: #f94682; }
+  .navigation li.is-active.teal { border-color: #3bd6bd; }
+  .navigation li.is-active.teal a { background-color: #3bd6bd; }
+  .navigation li.is-active.green { border-color: #84c576; }
+  .navigation li.is-active.green a { background-color: #84c576; }
+  .navigation li.is-active.orange { border-color: #f99128; }
+  .navigation li.is-active.orange a { background-color: #f99128; }
+  .main { position: initial; padding-bottom: 110px; }
   main header ul { padding: 15px 0; display: block; height: auto; }
   main header ul li { position: relative; display: block; width: 100%; }
   main header ul li:hover a { color: white; background: none; }
   main header ul li:hover a:before { display: none; }
   main header ul li:hover ul { display: none; }
-  main header ul li.is-active a { color: #a3cd39; background: white; }
-  main header ul li.is-active a:after, main header ul li.is-active a:before { display: block; }
+  main header ul li:hover ul a { color: black; }
+  main header ul li.is-active a { background: white; }
   main header ul li.is-active ul { display: block; }
   main header ul li.is-active ul a:after { display: none; }
   main header ul li a { font-size: 15px; }
   main header ul li a:after { display: none; content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 5px; background: #a3cd39; }
-  main header ul li ul { position: relative; }
+  main header ul li ul { position: relative; border-bottom: transparent; }
   main header ul li ul li { padding: 0; font-size: 14px; }
   main header ul li ul li a { font-size: 13px; }
   header nav .grid-50 { width: 50%; }

@@ -5,6 +5,7 @@ head.ready(function() {
 		$('.js-menu').removeClass("is-active");
 		$(".js-form-login").hide();
 		$('.js-login').removeClass("is-active");
+		$('body').removeClass('is-active');
 	});
 
 	$('.js-open-nav').on('click', function(event) {
@@ -16,12 +17,12 @@ head.ready(function() {
 		}
 		return false;
 	});
-	$("body").on("click", ".js-login, .js-form-login, .js-nav, .js-menu, .popup__in", function(event){
+	$("body").on("click", ".navigation, .js-login, .js-form-login, .js-nav, .js-menu, .popup__in", function(event){
 		event.stopPropagation();
 	});
 
 	$('.js-menu-btn').on('click', function() {
-		$('.js-menu').toggleClass('is-active');
+		$('body').toggleClass('is-active');
 	});
 	
 	$('.popup').on('click', function(event) {
@@ -39,6 +40,16 @@ head.ready(function() {
 	$('.js-login').on('click', function(event) {
 		$(this).addClass('is-active');
 		$(".js-form-login").show();
+	});
+
+	$( window ).resize(function() {
+		var width = $( window ).width();
+		if (width > 720) {
+			$('.navigation').addClass('is-transition');
+		}
+		else if (width < 720) {
+			$('.navigation').removeClass('is-transition');
+		}
 	});
 
 	//slick

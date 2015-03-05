@@ -57,10 +57,10 @@ body {
 }
 
 /*---Header---*/
-body > header {
+body header {
 	background:#a3cd39;
 }
-body > header nav {
+body header nav {
 	max-width:1200px;
 	margin:auto;
 	color:#6c9011;
@@ -68,14 +68,14 @@ body > header nav {
 	line-height:60px;
 	text-transform:uppercase;
 }
-body > header nav a {
+body header nav a {
 	position:relative;
 	display:inline-block;
 	vertical-align:top;
 	margin:0px 20px;
 	color:#fff;
 }
-body > header nav a:after {
+body header nav a:after {
 	display:none;
 	content:'';
 	position:absolute;
@@ -85,41 +85,41 @@ body > header nav a:after {
 	border:10px solid transparent;
 	border-top-color:#a3cd39;
 }
-body > header nav a:hover:after {
+body header nav a:hover:after {
 	display:block;
 }
-body > header nav a.icon {
+body header nav a.icon {
 	width:26px;
 	height:60px;
 	margin:0px 5px;
 	background-image:url('images/header-icons.png');
 	background-repeat:no-repeat;
 }
-body > header nav a.icon.home {
+body header nav a.icon.home {
 	background-position:0px 0px;
 }
-body > header nav a.icon.fb {
+body header nav a.icon.fb {
 	background-position:0px -60px;
 }
-body > header nav a.icon.inst {
+body header nav a.icon.inst {
 	background-position:0px -120px;
 }
-body > header nav a.icon.tt {
+body header nav a.icon.tt {
 	background-position:0px -180px;
 }
-body > header nav a.icon.pin {
+body header nav a.icon.pin {
 	background-position:0px -240px;
 }
-body > header nav a.icon.cal {
+body header nav a.icon.cal {
 	background-position:0px -300px;
 }
-body > header nav a.login {
+body header nav a.login {
 	margin-right:5px;
 }
-body > header nav a.register {
+body header nav a.register {
 	margin-left:5px;
 }
-body > header nav a.login:before {
+body header nav a.login:before {
 	content:'';
 	display:inline-block;
 	vertical-align:middle;
@@ -128,16 +128,16 @@ body > header nav a.login:before {
 	margin-right:5px;
 	background:url('images/header-icons.png') 0px -360px no-repeat;
 }
-body > header nav .form-wrap {
+body header nav .form-wrap {
 	display:inline-block;
 	vertical-align:middle;
 	height:33px;
 }
-body > header nav form input {
+body header nav form input {
 	display:inline-block;
 	vertical-align:top;
 }
-body > header nav form input[type="text"] {
+body header nav form input[type="text"] {
 	height:30px;
 	padding:0px 5px;
 	border:1px solid #fff;
@@ -147,7 +147,7 @@ body > header nav form input[type="text"] {
 	font-family:Abel;
 	font-size:14px;
 }
-body > header nav form input[type="submit"] {
+body header nav form input[type="submit"] {
 	width:33px;
 	height:33px;
 	border:0;
@@ -168,6 +168,7 @@ main {
 main header {
 	max-width:1200px;
 	margin:20px auto;
+	background: transparent;
 }
 main header a.logo {
 	display:block;
