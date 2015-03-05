@@ -184,6 +184,7 @@ main header figure.ad {
 	background:#838383;
 }
 main .scroll-top {
+	display: none;
 	position:fixed;
 	right:40px;
 	bottom:180px;

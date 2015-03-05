@@ -52,6 +52,15 @@ head.ready(function() {
 		}
 	});
 
+	$(document).scroll(function() {    
+		if ($(window).scrollTop() > $(window).height()/2) {
+			$(".scroll-top").fadeIn();
+		}
+		else{
+			$(".scrolltop").fadeOut();
+		}
+	});
+
 	//slick
 	$('.slick-slider').slick({
 		infinite: true,
