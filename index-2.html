@@ -15,7 +15,7 @@
 
 <body>
 <header>
-	<nav>
+	<nav class="header-nav">
 		<div class="menu grid grid-50 no-pad js-menu">
 			<button class="menu__btn js-menu-btn"></button>
 			<a href="#" title="Home" class="icon home"></a>
@@ -32,10 +32,27 @@
 			<a href="#" title="Twitter" class="icon tt"></a>
 			<a href="#" title="Pinterest" class="icon pin"></a>
 			<a href="#" title="Calendar" class="icon cal"></a>
-			<a href="#" title="Login" class="login">Login
+			<a href="#" title="Login" class="login js-login">Login
 			</a> 
 			<span>&iota; </span>
 			<a href="#" title="Register" class="register">Register</a>
+		<div class="form-login js-form-login">
+			<div class="form-login__field">
+				<label for="Username" class="form-login__user"></label>
+				<input id="Username" type="text" placeholder="Username">
+			</div>
+			<div class="form-login__field">
+				<label for="Password" class="form-login__pass"></label>
+				<input id="Password" type="text" placeholder="Password">
+			</div>
+			<div class="form-login__text">or sign in with</div>
+			<button class="form-login__btn">Sign In</button>
+			<ul class="form-login__soc">
+				<li><a class="ico ico_f" href="#"></a></li>
+				<li><a class="ico ico_g" href="#"></a></li>
+			</ul>
+			<a href="#" class="form-login__forgot">Forgot your password?</a>
+		</div>
 		<div class="form-wrap">
 				<form method="post">
 					<input class="js-search" type="submit" value="Submit">
@@ -77,7 +94,7 @@
 						<li><a href="#">Removal Companies</a></li>
 						<li><a href="#">Charities</a></li>
 					</ul>
-				</li><li><figure><img class="lazy" data-original="css/images/menu-ad.jpg" alt=""></figure></li>
+				</li><li><figure><img src="css/images/menu-ad.jpg" alt=""></figure></li>
 			</ul>
 		</li><li class="js-nav"><a href="#" class="js-open-nav">Parenting</a>
 			<ul>
@@ -299,21 +316,23 @@
 					</div>
 				</div>
 			</div>
-			<div class="grid grid-33">
-				<article>
-					<figure><img class="lazy" data-original="css/images/lost-paradise.jpg" alt=""></figure>
-					<a href="#">Lost Paradise</a>
-				</article>
-			</div><div class="grid grid-33">
-				<article>
-					<figure><img class="lazy" data-original="css/images/adhari-park.jpg" alt=""></figure>
-					<a href="#">Adhari Park</a>
-				</article>
-			</div><div class="grid grid-33">
-				<article>
-					<figure><img class="lazy" data-original="css/images/wahoo-water-park.jpg" alt=""></figure>
-					<a href="#">Wahoo Water Park</a>
-				</article>
+			<div class="entertainment">
+				<div class="grid grid-33">
+					<article>
+						<figure><img class="lazy" data-original="css/images/lost-paradise.jpg" alt=""></figure>
+						<a href="#">Lost Paradise</a>
+					</article>
+				</div><div class="grid grid-33">
+					<article>
+						<figure><img class="lazy" data-original="css/images/adhari-park.jpg" alt=""></figure>
+						<a href="#">Adhari Park</a>
+					</article>
+				</div><div class="grid grid-33">
+					<article>
+						<figure><img class="lazy" data-original="css/images/wahoo-water-park.jpg" alt=""></figure>
+						<a href="#">Wahoo Water Park</a>
+					</article>
+				</div>
 			</div>
 		</div>
 	</section>

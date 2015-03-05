@@ -49,7 +49,6 @@
 
 
 body
-	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
 
@@ -77,6 +76,104 @@ body
 			left: 50%
 			margin: -15px 0 0 -15px
 			+svg(menu, 30, 30)
+.header-nav
+	position: relative
+.form-login
+	position: absolute
+	right: 10px
+	top: 73px
+	padding: 14px
+	width: 250px
+	color: #FFF
+	text-align: left
+	line-height: 1.4
+	font-family: "Lato"
+	font-size: 12px
+	z-index: 2
+	text-transform: lowercase
+	background: #cd0f41
+	display: none
+	+box
+	.form-login__field
+		position: relative
+		margin-top: 10px
+		padding-left: 33px
+		+box
+		&:first-child
+			margin-top: 0
+		input
+			padding: 0 12px
+			height: 34px
+			width: 100%
+			color: #A1A1A1
+			font-family: "Lato"
+			font-size: 14px
+			font-weight: 400
+			vertical-align: top
+			background: #fff
+			+box
+		label
+			position: absolute
+			top: 0
+			left: 0
+			cursor: pointer
+			width: 33px
+			height: 34px
+			background: #dedede
+			&:before
+				position: absolute
+				content: ''
+				top: 50%
+				left: 50%
+				margin: -9px 0 0 -8px
+			&.form-login__user
+				&:before
+					+s(user-ico)
+			&.form-login__pass
+				&:before
+					+s(pas)
+	.form-login__text
+		padding: 6px 0 7px 110px
+		line-height: 1
+	.form-login__btn
+		padding: 0 15px
+		height: 24px
+		color: #fff
+		font-size: 14px
+		font-weight: 400
+		vertical-align: top
+		display: inline-block
+		border: 1px solid #fff
+		background: none
+	.form-login__soc
+		margin-left: 35px
+		line-height: 1
+		font-size: 0
+		vertical-align: top
+		display: inline-block
+		li
+			margin-left: 9px
+			display: inline-block
+			&:first-child
+				margin-left: 0
+	.form-login__forgot
+		margin: 12px 0 0
+	a
+		&:hover
+			&:after
+				display: none
+.login
+	&.is-active
+		&:after
+			display: block
+		
+.ico
+	margin: 0
+	display: inline-block
+	&.ico_f
+		+s(f-ico)
+	&.ico_g
+		+s(google-ico)
 
 section.top
 	.newsletter
@@ -140,7 +237,9 @@ section.top
 			+border-radius(3px)
 		li
 			margin-left: 5px
-
+.entertainment
+	float: left
+	width: 100%
 .classifieds
 	+clr
 .classifieds-slider

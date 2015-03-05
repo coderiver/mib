@@ -3,6 +3,8 @@ head.ready(function() {
 	$(document).on("click", function() {
 		$('.js-nav').removeClass("is-active");
 		$('.js-menu').removeClass("is-active");
+		$(".js-form-login").hide();
+		$('.js-login').removeClass("is-active");
 	});
 
 	$('.js-open-nav').on('click', function(event) {
@@ -14,7 +16,7 @@ head.ready(function() {
 		}
 		return false;
 	});
-	$("body").on("click", ".js-nav, .js-menu, .popup__in", function(event){
+	$("body").on("click", ".js-login, .js-form-login, .js-nav, .js-menu, .popup__in", function(event){
 		event.stopPropagation();
 	});
 
@@ -32,6 +34,11 @@ head.ready(function() {
 	$('.js-search').on('click', function() {
 		$('.popup').addClass('is-active');
 		return false;
+	});
+
+	$('.js-login').on('click', function(event) {
+		$(this).addClass('is-active');
+		$(".js-form-login").show();
 	});
 
 	//slick
