@@ -175,7 +175,7 @@ $(window).load(function() {
 
 
 $(window).scroll(function() {
-	if ($(window).scrollTop() > $(window).height()/2) {
+	if ($(window).scrollTop() > 200) {
 		$('main .scroll-top').removeClass('active');
 	} else {
 		$('main .scroll-top').addClass('active');

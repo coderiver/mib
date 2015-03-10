@@ -53,11 +53,11 @@ head.ready(function() {
 	});
 
 	$(document).scroll(function() {    
-		if ($(window).scrollTop() > $(window).height()/2) {
+		if ($(window).scrollTop() > 100) {
 			$(".scroll-top").fadeIn();
 		}
 		else{
-			$(".scrolltop").fadeOut();
+			$(".scroll-top").fadeOut();
 		}
 	});
 

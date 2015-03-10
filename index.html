@@ -1,22 +1,896 @@
+
 <!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
-	<meta name="viewport" content="initial-scale=1">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <meta name="viewport" content="width=1200"> -->
-	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<title>MIB</title>
+	<link type="text/css" rel="stylesheet" href="css/reset.css">
+	<link type="text/css" rel="stylesheet" href="css/fonts.css">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
-<body>
-<!-- BEGIN  out-->
-<div class="out">
 
+<body>
+<div class="out">
+	<header class="header">
+		<nav class="header-nav">
+			<div class="menu grid grid-50 no-pad js-menu">
+				<button class="menu__btn js-menu-btn"></button>
+				<a href="#" title="Home" class="icon home"></a>
+				<div class="menu__in">
+					<a href="#" title="Forums">Forums</a>
+					<a href="#" title="Blog">Blog</a>
+					<a href="#" title="Business">Business</a>
+					<a href="#" title="Contact Us">Contact Us</a>
+				</div>
+			</div>
+			<div class="grid grid-50 no-pad right">
+				<a href="#" title="Facebook" class="icon fb"></a>
+				<a href="#" title="Instagram" class="icon inst"></a>
+				<a href="#" title="Twitter" class="icon tt"></a>
+				<a href="#" title="Pinterest" class="icon pin"></a>
+				<a href="#" title="Calendar" class="icon cal"></a>
+				<a href="#" title="Login" class="login js-login">Login
+				</a> 
+				<span>&iota; </span>
+				<a href="#" title="Register" class="register">Register</a>
+			<div class="form-login js-form-login">
+				<div class="form-login__field">
+					<label for="Username" class="form-login__user"></label>
+					<input id="Username" type="text" placeholder="Username">
+				</div>
+				<div class="form-login__field">
+					<label for="Password" class="form-login__pass"></label>
+					<input id="Password" type="text" placeholder="Password">
+				</div>
+				<div class="form-login__text">or sign in with</div>
+				<button class="form-login__btn">Sign In</button>
+				<ul class="form-login__soc">
+					<li><a class="ico ico_f" href="#"></a></li>
+					<li><a class="ico ico_g" href="#"></a></li>
+				</ul>
+				<a href="#" class="form-login__forgot">Forgot your password?</a>
+			</div>
+			<div class="form-wrap">
+					<form method="post">
+						<input class="js-search" type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="main">
+		<header>
+			<div class="grid grid-25 grid-logo no-pad">
+				<a href="#" title="MIB" class="logo"></a>
+			</div><div class="grid grid-75 no-pad">
+				<figure class="ad"></figure>
+			</div>
+			<ul class="navigation">
+				<li class="red js-nav">
+					<a href="#" >Classifieds</a>
+					<!-- <ul hidden>
+						<li>
+							<ul>
+								<li>Moving To Bahrain</li>
+								<li><a href="#">Discover Bahrain</a></li>
+								<li><a href="#">Where to Stay?</a></li>
+								<li><a href="#">Visas &amp; Residency</a></li>
+								<li><a href="#">Medical Insurance</a></li>
+								<li><a href="#">Communicate In Arabic</a></li>
+								<li><a href="#">Ramadan</a></li>
+							</ul>
+						</li><li>
+							<ul>
+								<li>Getting Around</li>
+								<li><a href="#">Emergency Numbers</a></li>
+								<li><a href="#">Embassies</a></li>
+								<li><a href="#">Ministries</a></li>
+								<li><a href="#">Home Care</a></li>
+								<li><a href="#">Jobs In Bahrain</a></li>
+								<li><a href="#">Real Estate Agency</a></li>
+								<li><a href="#">Removal Companies</a></li>
+								<li><a href="#">Charities</a></li>
+							</ul>
+						</li><li><figure><img src="css/images/menu-ad.jpg" alt=""></figure></li>
+					</ul> -->
+				</li>
+				<li class="pink js-nav"><a href="#" class="js-open-nav">Parenting</a>
+					<ul>
+						<li>
+							<ul>
+								<li>Pregnancy</li>
+								<li><a href="#">Getting Pregnant</a></li>
+								<li><a href="#">Labor &amp; Birth</a></li>
+								<li><a href="#">Newborn</a></li>
+								<li><a href="#">Online Consultations</a></li>
+								<li><a href="#">Tools</a></li>
+							</ul>
+						</li><li>
+							<ul>
+								<li>Baby &amp; Toddler</li>
+								<li><a href="#">Baby Names</a></li>
+								<li><a href="#">Baby Shops</a></li>
+								<li><a href="#">Baby Fitness</a></li>
+							</ul>
+						</li><li>
+							<ul>
+								<li>Family Life</li>
+								<li><a href="#">Nutrition</a></li>
+								<li><a href="#">Sleep</a></li>
+								<li><a href="#">Relationship Consultant</a></li>
+								<li><a href="#">Family Therapist</a></li>
+								<li><a href="#">Real Life Stories</a></li>
+							</ul>
+							<ul>
+								<li>Groups</li>
+								<li><a href="#">Breast Cancer Support Group</a></li>
+								<li><a href="#">Child Lost Support Group</a></li>
+								<li><a href="#">Charities</a></li>
+							</ul>
+						</li><li><figure><img src="css/images/menu-ad.jpg" alt=""></figure></li>
+					</ul>
+				</li>
+				<li class="teal js-nav"><a href="#" class="js-open-nav">Education</a>
+					<ul>
+						<li>
+							<ul>
+								<li>Schools</li>
+								<li><a href="#">Primary &amp; Secondary Education</a></li>
+								<li><a href="#">Nurseries &amp; Pre-Schools</a></li>
+								<li><a href="#">Universities</a></li>
+								<li><a href="#">Special Education</a></li>
+								<li><a href="#">Private Tutors / Additional Learning</a></li>
+								<li><a href="#">Playgroups</a></li>
+								<li><a href="#">Language Tuition</a></li>
+							</ul>
+						</li><li>
+							<ul>
+								<li>Back To School</li>
+								<li><a href="#">Preparing For New School Year</a></li>
+								<li><a href="#">Bahrain Stationeries</a></li>
+								<li><a href="#">Lunchbox Ideas</a></li>
+								<li><a href="#">Learning Resources</a></li>
+							</ul>
+						</li><li><figure><img  src="css/images/menu-ad.jpg" alt=""></figure></li>
+					</ul>
+				</li>
+				<li class="green js-nav"><a href="#" class="js-open-nav">Health &amp; Beauty</a>
+					<ul>
+						<li>
+							<ul>
+								<li>Health Living</li>
+								<li><a href="#">Personal Trainers</a></li>
+								<li><a href="#">Health Tips</a></li>
+								<li><a href="#">Life Coaching &amp; Stress Management</a></li>
+								<li><a href="#">Bahrain Meditation</a></li>
+								<li><a href="#">Book An Appointment</a></li>
+							</ul>
+							<ul>
+								<li>Baby Health</li>
+								<li><a href="#">Infection &amp; Diseases</a></li>
+								<li><a href="#">Condition</a></li>
+							</ul>
+						</li><li>
+							<ul>
+								<li>Recipies / Food / MIB Kitchen</li>
+							</ul>
+							<ul>
+								<li>Ask The Doctor</li>
+							</ul>
+							<ul>
+								<li>Useful Numbers</li>
+								<li><a href="#">Family Healthcare</a></li>
+								<li><a href="#">Beauty &amp; Fitness</a></li>
+								<li><a href="#">Maternity</a></li>
+							</ul>
+						</li><li><figure><img src="css/images/menu-ad.jpg" alt=""></figure></li>
+					</ul>
+				</li>
+				<li class="orange js-nav"><a href="#" class="js-open-nav">Things To Do</a>
+					<ul>
+						<li>
+							<ul>
+								<li>Activities</li>
+								<li><a href="#">Activity Centres</a></li>
+								<li><a href="#">Parks &amp; Playgroups</a></li>
+								<li><a href="#">Family Clubs</a></li>
+								<li><a href="#">Art &amp; Craft</a></li>
+								<li><a href="#">Dance Classes</a></li>
+								<li><a href="#">Sports</a></li>
+								<li><a href="#">Attractions</a></li>
+								<li><a href="#">Azziza Birds Kingdom</a></li>
+								<li><a href="#">Eating Out &amp; In</a></li>
+							</ul>
+						</li><li>
+							<ul>
+								<li>Birthday Parties</li>
+								<li><a href="#">Party Ideas</a></li>
+								<li><a href="#">Games &amp; Activities</a></li>
+								<li><a href="#">Venues</a></li>
+								<li><a href="#">Party Planning</a></li>
+							</ul>
+						</li><li>
+							<ul>
+								<li>Events</li>
+								<li><a href="#">Calendar Events</a></li>
+								<li><a href="#">Brunches In Bahrain</a></li>
+								<li><a href="#">Winter Camps</a></li>
+								<li><a href="#">School Holidays</a></li>
+								<li><a href="#">Movies</a></li>
+							</ul>
+							<ul>
+								<li>Shopping</li>
+								<li><a href="#">Baby Essentials</a></li>
+								<li><a href="#">Nursery Buys</a></li>
+								<li><a href="#">Children's Books</a></li>
+								<li><a href="#">Gifts &amp; Trinkets</a></li>
+								<li><a href="#">Toys &amp; Games</a></li>
+								<li><a href="#">Tried &amp; Tasted</a></li>
+							</ul>
+						</li><li><figure><img  src="css/images/menu-ad.jpg" alt=""></figure></li>
+					</ul>
+				</li>
+				<li class="red js-nav"><a href="#" class="js-open-nav">Community</a>
+					<ul>
+						<li>
+							<ul>
+								<li>Purple Card</li>
+								<li><a href="#">What Is Purple Card?</a></li>
+								<li><a href="#">Where To Use?</a></li>
+								<li><a href="#">Where To Buy?</a></li>
+							</ul>
+						</li><li>
+							<ul>
+								<li>Forum</li>
+								<li><a href="#">Latest Post</a></li>
+								<li><a href="#">General</a></li>
+								<li><a href="#">Things To Do</a></li>
+								<li><a href="#">Pregnancy</a></li>
+								<li><a href="#">Parenting</a></li>
+							</ul>
+						</li><li>
+							<ul>
+								<li>Ask The Expert</li>
+							</ul>
+							<ul>
+								<li>Promotions</li>
+							</ul>
+							<ul>
+								<li>Competitions</li>
+							</ul>
+							<ul>
+								<li>Product Reviews</li>
+							</ul>
+						</li><li><figure><img src="css/images/menu-ad.jpg" alt=""></figure></li>
+					</ul>
+				</li>
+				<!-- <li class="pink js-nav"><a href="#" class="js-open-nav">Business</a>
+					<ul>
+						<li>
+							<ul>
+								<li><a href="#">Business Directory</a></li>
+								<li><a href="#">Consultancy</a></li>
+								<li><a href="#">Social Media Services</a></li>
+								<li><a href="#">Online Business Consulting</a></li>
+								<li><a href="#">Business Of The Month</a></li>
+								<li><a href="#">Outsourcing</a></li>
+							</ul>
+						</li><li><figure><img  src="css/images/menu-ad.jpg" alt=""></figure></li>
+					</ul>
+				</li> -->
+				<li><a href="#">Contact Us</a>
+		<!--		<ul>
+						<li>
+							<ul>
+								<li><a href="#">Contact Details</a></li>
+								<li><a href="#">Online Contact Form</a></li>
+								<li><a href="#">Newsletter Signup</a></li>
+								<li><a href="#">Your Feedback</a></li>
+							</ul>
+						</li><li><figure><img src="css/images/menu-ad.jpg" alt=""></figure></li>
+					</ul>
+		-->		</li>
+			</ul>	
+	</header>
+	<section class="top">
+		<figure class="left-ad"><img src="css/images/160x600.jpg" alt="">
+		</figure>
+			<div class="grid grid-100">
+				<div class="grid grid-33 newsletter">
+					<form method="post">
+						<label>Sign up for our newsletter</label>
+						<input type="text"><input type="submit" value="Sign Up">
+						<span>Get a Purple Card for $10 when u sign up for weekly emails</span>
+					</form>
+					<figure class="right-ad"><img src="css/images/300x250.jpg" alt=""></figure>
+				</div>
+				<div class="grid grid-66">
+					<div class="top-slider">
+						<div>
+							<img class="lazy" data-original="css/images/lost-paradise.jpg" alt="">
+						</div>
+						<div>
+							<img class="lazy" data-original="css/images/adhari-park.jpg" alt="">
+						</div>
+						<div>
+							<img class="lazy" data-original="css/images/wahoo-water-park.jpg" alt="">
+						</div>
+						<div>
+							<img class="lazy" data-original="css/images/lost-paradise.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="entertainment">
+					<div class="grid grid-33">
+						<article>
+							<figure><img class="lazy" data-original="css/images/lost-paradise.jpg" alt=""></figure>
+							<a href="#">Lost Paradise</a>
+						</article>
+					</div><div class="grid grid-33">
+						<article>
+							<figure><img class="lazy" data-original="css/images/adhari-park.jpg" alt=""></figure>
+							<a href="#">Adhari Park</a>
+						</article>
+					</div><div class="grid grid-33">
+						<article>
+							<figure><img class="lazy" data-original="css/images/wahoo-water-park.jpg" alt=""></figure>
+							<a href="#">Wahoo Water Park</a>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="classifieds">
+			<h1 class="title">Classifieds</h1>
+			<div class="grid grid-100 right">
+				<a class="all" href="#">View All</a>
+				<a href="#">Post A Free Ad</a>
+			</div>
+			<div class="classifieds-slider">
+				<div>
+					<img src="css/images/slide-figure-1.jpg" alt="">
+					<h2>iPhone 4s</h2>
+					<p>iPhone 4s Perfect choice 16GB Wor...</p>
+				</div>
+				<div>
+					<img src="css/images/slide-figure-2.jpg" alt="">
+					<h2>Italian Leather Chair</h2>
+					<p>Call +973 23651458...</p>
+				</div>
+				<div>
+					<img src="css/images/slide-figure-3.jpg" alt="">
+					<h2>Sofa</h2>
+					<p>Leather Sofa...</p>
+				</div>
+				<div>
+					<img src="css/images/slide-figure-4.jpg" alt="">
+					<h2>Food Processor</h2>
+					<p>iPhone 4s Perfect choice 16GB Wor...</p>
+				</div>
+				<div>
+					<img src="css/images/slide-figure-1.jpg" alt="">
+					<h2>iPhone 4s</h2>
+					<p>iPhone 4s Perfect choice 16GB Wor...</p>
+				</div>
+				<div>
+					<img src="css/images/slide-figure-2.jpg" alt="">
+					<h2>Italian Leather Chair</h2>
+					<p>Call +973 23651458...</p>
+				</div>
+				<div>
+					<img src="css/images/slide-figure-3.jpg" alt="">
+					<h2>Sofa</h2>
+					<p>Leather Sofa...</p>
+				</div>
+				<div>
+					<img src="css/images/slide-figure-4.jpg" alt="">
+					<h2>Food Processor</h2>
+					<p>iPhone 4s Perfect choice 16GB Wor...</p>
+				</div>
+			</div>
+		</section>
+		<section class="categories">
+			<div class="slider-categories">
+				<div>
+					<article class="category-one">
+						<figure><img src="css/images/ask-the-doctor.jpg" alt=""></figure>
+						<h2>Ask the doctor</h2>
+						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
+						<div class="grid grid-50">
+							<a href="#" class="read-more">Readmore</a>
+						</div><div class="grid grid-50 right">
+							<a href="#" class="share">Share</a>
+						</div>
+					</article>
+				</div>
+				<div>
+					<article class="category-two">
+						<figure><img src="css/images/moving-to-bahrain.jpg" alt=""></figure>
+						<h2>Moving to Bahrain</h2>
+						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
+						<div class="grid grid-50">
+							<a href="#" class="read-more">Readmore</a>
+						</div><div class="grid grid-50 right">
+							<a href="#" class="share">Share</a>
+						</div>
+					</article>
+				</div>
+				<div>
+					<article class="category-three">
+						<figure><img src="css/images/bahrain-information-guide.jpg" alt=""></figure>
+						<h2>Bahrain info</h2>
+						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
+						<div class="grid grid-50">
+							<a href="#" class="read-more">Readmore</a>
+						</div><div class="grid grid-50 right">
+							<a href="#" class="share">Share</a>
+						</div>
+					</article>
+				</div>
+				<div>
+					<article class="category-four">
+						<figure><img src="css/images/back-to-school.jpg" alt=""></figure>
+						<h2>Back to school</h2>
+						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
+						<div class="grid grid-50">
+							<a href="#" class="read-more">Readmore</a>
+						</div><div class="grid grid-50 right">
+							<a href="#" class="share">Share</a>
+						</div>
+					</article>
+				</div>
+				<div>
+					<article class="category-one">
+						<figure><img src="css/images/ask-the-doctor.jpg" alt=""></figure>
+						<h2>Ask the doctor</h2>
+						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
+						<div class="grid grid-50">
+							<a href="#" class="read-more">Readmore</a>
+						</div><div class="grid grid-50 right">
+							<a href="#" class="share">Share</a>
+						</div>
+					</article>
+				</div>
+				<div>
+					<article class="category-two">
+						<figure><img src="css/images/moving-to-bahrain.jpg" alt=""></figure>
+						<h2>Moving to Bahrain</h2>
+						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
+						<div class="grid grid-50">
+							<a href="#" class="read-more">Readmore</a>
+						</div><div class="grid grid-50 right">
+							<a href="#" class="share">Share</a>
+						</div>
+					</article>
+				</div>
+				<div>
+					<article class="category-three">
+						<figure><img src="css/images/bahrain-information-guide.jpg" alt=""></figure>
+						<h2>Bahrain information guide</h2>
+						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
+						<div class="grid grid-50">
+							<a href="#" class="read-more">Readmore</a>
+						</div><div class="grid grid-50 right">
+							<a href="#" class="share">Share</a>
+						</div>
+					</article>
+				</div>
+				<div>
+					<article class="category-four">
+						<figure><img src="css/images/back-to-school.jpg" alt=""></figure>
+						<h2>Back to school</h2>
+						<p>Quisque placerat nec mauris ut molestie. Pellentesque venenatis quam ut justo tincidunt.</p>
+						<div class="grid grid-50">
+							<a href="#" class="read-more">Readmore</a>
+						</div><div class="grid grid-50 right">
+							<a href="#" class="share">Share</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+				<section class="more">
+			<h1 class="title">More</h1>
+			<div class="grid grid-100">
+				<div class="grid grid-25">
+					<a href="#">
+						<figure><img class="lazy" data-original="css/images/more-1.jpg" alt=""></figure>
+					</a>
+				</div><div class="grid grid-25">
+					<a href="#">
+						<figure><img class="lazy" data-original="css/images/more-2.jpg" alt=""></figure>
+					</a>
+				</div><div class="grid grid-25">
+					<a href="#">
+						<figure><img class="lazy" data-original="css/images/more-3.jpg" alt=""></figure>
+					</a>
+				</div><div class="grid grid-25">
+					<a href="#">
+						<figure><img class="lazy" data-original="css/images/more-4.jpg" alt=""></figure>
+					</a>
+				</div>
+			</div>
+		</section>
+				<section class="have-you-seen">
+			<h1 class="title">Have You Seen</h1>
+			<div class="grid grid-100">
+				<div class="grid grid-25">
+					<a href="#">
+						<figure><img class="lazy" data-original="css/images/have-you-seen-1.jpg" alt=""></figure>
+					</a>
+				</div><div class="grid grid-25">
+					<a href="#">
+						<figure><img class="lazy" data-original="css/images/have-you-seen-2.jpg" alt=""></figure>
+					</a>
+				</div><div class="grid grid-25">
+					<a href="#">
+						<h2>Catering</h2>
+						<figure><img class="lazy" data-original="css/images/have-you-seen-3.jpg" alt=""></figure>
+					</a>
+				</div><div class="grid grid-25">
+					<a href="#">
+						<h2>Bahrain Properties</h2>
+						<figure><img class="lazy" data-original="css/images/have-you-seen-4.jpg" class="lazy" data-original=""></figure>
+					</a>
+				</div>
+			</div>
+		</section>
+				<section class="bahrain-jobs">
+			<h1 class="title">Bahrain Jobs</h1>
+			<div class="latest grid grid-66">
+				<h2>Lastest Jobs In Bahrain</h2>
+				<article>
+					<p>Donec nec elit accumsan, porta justo vel, rhoncus mi. Aenean eros tortor, lacinia a ultrices a, blandit id dui. Duis pellentesque placerat posuere. Fusce fringilla nunc a orci pellentesque, a sollicitudin neque consectetur. Ut quis pretium magna. Mauris vitae tristique magna, nec vestibulum mauri</p>
+					<div class="grid grid-50">
+						<div class="phone">1235456987</div>
+					</div><div class="grid grid-50">
+						<a href="#" class="mail">contact@joydring.net</a>
+					</div>
+				</article>
+				<article>
+					<p>Donec nec elit accumsan, porta justo vel, rhoncus mi. Aenean eros tortor, lacinia a ultrices a, blandit id dui. Duis pellentesque placerat posuere. Fusce fringilla nunc a orci pellentesque, a sollicitudin neque consectetur. Ut quis pretium magna. Mauris vitae tristique magna, nec vestibulum mauri</p>
+					<div class="grid grid-50">
+						<div class="phone">1235456987</div>
+					</div><div class="grid grid-50">
+						<a href="#" class="mail">contact@joydring.net</a>
+					</div>
+				</article>
+				<a href="#" class="view-all">View All</a>
+			</div><div class="forum grid grid-33">
+				<h2>Mums in Bahrain Forums</h2>
+				<h3>Join our community<br>
+				Discover the world of mums in bahrain</h3>
+				<p>Nullam quis nisl ipsum. Maecenas luctus nec felis sollicitudin accumsan. Morbi in efficitur nibh. Aliquam ac est sit amet quam pulvinar facilisis eget at arcu.</p>
+				<a href="#" class="register">Register</a>
+			</div>
+		</section>
+		<section class="other">
+			<div class="grid grid-100">
+				<div class="grid grid-33">
+					<article>
+						<h1 class="title">Recipies</h1>
+						<div class="other-slider">
+							<div>
+								<img src="css/images/recipies-1.jpg" alt="">
+								<h2>Apricot Bars</h2>
+							</div>
+							<div>
+								<img src="css/images/recipies-2.jpg" alt="">
+								<h2>Healthy Banana</h2>
+							</div>
+							<div>
+								<img src="css/images/recipies-1.jpg" alt="">
+								<h2>Apricot Bars</h2>
+							</div>
+							<div>
+								<img src="css/images/recipies-2.jpg" alt="">
+								<h2>Healthy Banana</h2>
+							</div>
+						</div>
+					</article>
+				</div><div class="grid grid-33">
+					<article>
+						<h1 class="title">MIB Channel</h1>
+						<figure><img class="lazy" data-original="css/images/mib-channel.jpg" alt=""></figure>
+					</article>
+				</div><div class="grid grid-33">
+					<article>
+						<h1 class="title">Tools</h1>
+						<figure><img class="lazy" data-original="css/images/mib-channel.jpg" alt=""></figure>
+					</article>
+				</div>
+			</div>
+		</section>
+				<section class="centrepoint">
+			<div class="grid grid-100">
+				<div class="grid grid-33">
+					<figure><img class="lazy" data-original="css/images/centrepoint-1.jpg" alt=""></figure>
+				</div><div class="grid grid-33">
+					<figure><img class="lazy" data-original="css/images/centrepoint-2.jpg" alt=""></figure>
+				</div><div class="grid grid-33">
+					<figure><img class="lazy" data-original="css/images/centrepoint-3.jpg" alt=""></figure>
+				</div>
+			</div>
+		</section>
+		<section class="tabs">
+			<div class="grid grid-100 no-pad">
+				<ul>
+					<li class="tab-1 active js-tab-item">Kids Activities
+					</li><li class="tab-2 js-tab-item">Bahrain Events
+					</li><li class="tab-3 js-tab-item">Jobs
+					</li><li class="tab-4 js-tab-item">Restaurants
+					</li><li class="tab-5 js-tab-item">Spas
+					</li><li class="tab-6 js-tab-item"><span>Hospitals</span></li>
+				</ul>
+				<article class="slick-slider active grid grid-100 ">
+						<div>
+							<img src="css/images/kids-activities-1.jpg" alt="">
+						</div>
+						<div>
+							<img src="css/images/kids-activities-2.jpg" alt="">
+						</div>
+						<div>
+							<img src="css/images/kids-activities-3.jpg" alt="">
+						</div>
+						<div>
+							<img src="css/images/kids-activities-1.jpg" alt="">
+						</div>
+						<div>
+							<img src="css/images//kids-activities-2.jpg" alt="">
+						</div>
+						<div>
+							<img src="css/images//kids-activities-3.jpg" alt="">
+						</div>
+				</article>
+				<article class="slick-slider grid grid-100 ">
+					<div>
+						<img src="css/images/kids-activities-1.jpg" alt="">
+					</div>
+					<div>
+						<img src="css/images/kids-activities-2.jpg" alt="">
+					</div>
+					<div>
+						<img src="css/images/kids-activities-3.jpg" alt="">
+					</div>
+					<div>
+						<img src="css/images/kids-activities-1.jpg" alt="">
+					</div>
+					<div>
+						<img src="css/images//kids-activities-2.jpg" alt="">
+					</div>
+					<div>
+						<img src="css/images//kids-activities-3.jpg" alt="">
+					</div>
+				</article>
+			</div>
+		</section>
+		<section class="mother-stories">
+			<h1 class="title">Mother Stories</h1>
+			<div class="slider-categories">
+				<div>
+					<a href="#">
+						<figure><img src="css/images/mother-stories-1.jpg" alt=""></figure>
+						<h2>Musheera Abbas</h2>
+						<h3>Amwaj Islands</h3>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<figure><img src="css/images/mother-stories-2.jpg" alt=""></figure>
+						<h2>Alexandra James</h2>
+						<h3>Riffa Views</h3>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<figure><img src="css/images/mother-stories-3.jpg" alt=""></figure>
+						<h2>Jenny Smith</h2>
+						<h3>Hamad Town</h3>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<figure><img src="css/images/mother-stories-4.jpg" alt=""></figure>
+						<h2>Maria Bin Ali</h2>
+						<h3>Muharraq</h3>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<figure><img src="css/images/mother-stories-1.jpg" alt=""></figure>
+						<h2>Musheera Abbas</h2>
+						<h3>Amwaj Islands</h3>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<figure><img src="css/images/mother-stories-2.jpg" alt=""></figure>
+						<h2>Alexandra James</h2>
+						<h3>Riffa Views</h3>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<figure><img src="css/images/mother-stories-3.jpg" alt=""></figure>
+						<h2>Jenny Smith</h2>
+						<h3>Hamad Town</h3>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<figure><img src="css/images/mother-stories-4.jpg" alt=""></figure>
+						<h2>Maria Bin Ali</h2>
+						<h3>Muharraq</h3>
+					</a>
+				</div>
+			</div>
+		</section>
+				<section class="bottom">
+			<div class="grid grid-100">
+				<div class="grid grid-66">
+					<div class="grid grid-50">
+						<h2 class="red">Sports Professionals</h2>
+						<p>
+							Al Areen Palace &amp; Spa Hotel
+							<span>Al Areen 17 845 000</span>
+						</p>
+						<p>
+							Al Areen Palace &amp; Spa Hotel
+							<span>Al Areen 17 845 000</span>
+						</p>
+						<p>
+							Al Areen Palace &amp; Spa Hotel
+							<span>Al Areen 17 845 000</span>
+						</p>
+						<a href="#" class="view-all">View All</a>
+					</div><div class="grid grid-50">
+						<h2 class="orange">Spas Listing</h2>
+						<p>
+							Al Areen Palace &amp; Spa Hotel
+							<span>Al Areen 17 845 000</span>
+						</p>
+						<p>
+							Al Areen Palace &amp; Spa Hotel
+							<span>Al Areen 17 845 000</span>
+						</p>
+						<p>
+							Al Areen Palace &amp; Spa Hotel
+							<span>Al Areen 17 845 000</span>
+						</p>
+						<a href="#" class="view-all">View All</a>
+					</div>
+					<a href="#" class="load-more">Load More Content</a>
+				</div><div class="grid grid-33">
+				</div>
+			</div>
+		</section>
+		<div class="scroll-top"></div>
+	</main>
+	<div class="collapse"></div>
+	<footer>
+			<nav>
+			<ul>
+				<li>
+					<ul>
+						<li>About Bahrain</li>
+						<li><a href="#">Visiting Bahrain</a></li>
+						<li><a href="#">Visas &amp; Residency</a></li>
+						<li><a href="#">Bahrain Destinations</a></li>
+						<li><a href="#">10 Things To Do</a></li>
+					</ul>
+					<ul>
+						<li>Beauty</li>
+						<li><a href="#">Healthy Recipes</a></li>
+						<li><a href="#">Fitness</a></li>
+						<li><a href="#">Nutritions</a></li>
+						<li><a href="#">Massage And Spa</a></li>
+					</ul>
+					<ul>
+						<li>Community</li>
+					</ul>
+				</li><li>
+					<ul>
+						<li>Education</li>
+						<li><a href="#">Schools</a></li>
+						<li><a href="#">Back To School</a></li>
+						<li><a href="#">Art And Craft</a></li>
+						<li><a href="#">Kids Activities</a></li>
+					</ul>
+					<ul>
+						<li>Parenting</li>
+						<li><a href="#">Getting Pregnant</a></li>
+						<li><a href="#">Pregnancy</a></li>
+						<li><a href="#">Labor And Birth</a></li>
+						<li><a href="#">New Born</a></li>
+					</ul>
+					<ul>
+						<li>Cook Book</li>
+					</ul>
+				</li><li>
+					<ul>
+						<li>Purple Club</li>
+						<li><a href="#">Where To Use</a></li>
+						<li><a href="#">Where To Buy</a></li>
+						<li><a href="#">Apply For Purple Card</a></li>
+					</ul>
+					<ul>
+						<li>Expert Corner</li>
+						<li><a href="#">Ask A Doctor</a></li>
+						<li><a href="#">Relationship Consultant</a></li>
+						<li><a href="#">Family Therapist</a></li>
+						<li><a href="#">Private Tutors</a></li>
+						<br>
+					</ul>
+					<ul>
+						<li class="bisiness">Business</li>
+					</ul>
+				</li><li>
+					<ul>
+						<li>Explore Mums Website</li>
+						<li>
+							<ul>
+								<li><a href="#">Nutrition</a></li>
+								<li><a href="#">Dentists</a></li>
+								<li><a href="#">Bahrain Jobs</a></li>
+								<li><a href="#">Activities</a></li>
+								<li><a href="#">Playgroups</a></li>
+								<li><a href="#">Winter-camps</a></li>
+								<li><a href="#">Family Clubs</a></li>
+								<li><a href="#">Movie Timings</a></li>
+								<li><a href="#">Yoga Classes</a></li>
+								<li><a href="#">About Us</a></li>
+							</ul><ul>
+								<li><a href="#">Dance</a></li>
+								<li><a href="#">Sports</a></li>
+								<li><a href="#">Shopping</a></li>
+								<li><a href="#">Attractions</a></li>
+								<li><a href="#">Restaurants</a></li>
+								<li><a href="#">Sensory Play</a></li>
+								<li><a href="#">Competition</a></li>
+								<li><a href="#">Bahrain Brunches</a></li>
+								<li><a href="#">Mother Stories</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>Contact Us</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="social right">
+				<a href="#" title="Facebook" class="fb">
+				</a><a href="#" title="Instagram" class="inst">
+				</a><a href="#" title="Twitter" class="tt">
+				</a><a href="#" title="Pinterest" class="pin"></a>
+			</div>
+		</nav>
+		<div class="footer">
+			<div class="copy">
+				<div class="grid grid-50">
+					&copy; 2015. Mums in Bahrain. All Rights Reserved.
+					<a href="#">Privacy &amp; Disclaimer</a> | <a href="#">Terms &amp; Conditions</a>
+				</div><div class="grid grid-50 right">
+					<span>Powered By:</span>
+				</div>
+			</div>
+		</div></footer>
 </div>
-<!-- END out-->
-<!-- load scripts -->
+<div class="popup">
+	<div class="popup__in">
+		<div class="form">
+			<div class="form__text">MUMS IN BAHRAIN</div>
+			<div class="form__search">
+				<input type="text" placeholder="search">
+				<button class="btn-search"></button>
+			</div>
+		</div>
+	</div>
+</div>
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
 </html>
