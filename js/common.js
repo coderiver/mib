@@ -188,4 +188,19 @@ head.ready(function() {
 	$("img.lazy").lazyload({
 		effect : "fadeIn"
 	});
+
+	$('.js-toggle').click(function(event) {
+		bl = $(this).data('toggle');
+		$('.'+bl).show();
+		return false;
+	});
+
+
+	
+
+	function loadImage() {
+	    document.getElementById("lod").style.display = "none";
+	    document.getElementById("container").style.display = "block";
+	}
+	loadImage();
 });
